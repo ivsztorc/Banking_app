@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Banks</h1>
+  <% @banks.each do |bank| %>
+  <li>
+    <%= link_to (bank) do %>
+    <%= bank.name %>
+    <% end %>
+  </li>
+  <% end %>
+</ul>
+
+
+<%= link_to 'New bank', new_bank_path %>
+<%= link_to 'All banks', banks_path %>
